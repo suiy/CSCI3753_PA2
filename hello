@@ -1,0 +1,530 @@
+this is new. 
+Setup OK 
+Queue OK 
+In main: creating consumer thread 0
+In main: creating producer thread 0
+Creat thread OK 
+In main: creating consumer thread 1
+In main: creating producer thread 1
+Creat thread OK 
+In main: creating consumer thread 2
+In main: creating producer thread 2
+after push, queue is
+ifeng.com
+***************************from producer ifeng.com
+after push, queue is
+ifeng.com
+goo.ne.jp
+***************************from producer goo.ne.jp
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+***************************from producer bbc.co.uk
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+***************************from producer yandex.ru
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+***************************from producer myspace.com
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+***************************from producer mail.ru
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+***************************from producer cnet.com
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+***************************from producer go.com
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+***************************from producer 4399.com
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+***************************from producer orkut.com
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+***************************from producer skype.com
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+***************************from producer ameblo.jp
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+***************************from producer naver.com
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+***************************from producer flickr.com
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+***************************from producer 4shared.com
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+***************************from producer amazon.co.jp
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+***************************from producer linkedin.com
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+***************************from producer dailymotion.com
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+***************************from producer imdb.com
+after push, queue is
+ifeng.com
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***************************from producer aol.com
+Creat thread OK 
+In main: creating consumer thread 3
+In main: creating producer thread 3
+Quit producer OK 
+after pop, queue is
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+Creat thread OK 
+In main: creating consumer thread 4
+In main: creating producer thread 4
+Creat thread OK 
+Output file OK 
+In main: creating producer thread 
+Wait for thread OK 
+goo.ne.jp
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer ifeng.com,123.125.72.60
+after pop, queue is
+bbc.co.uk
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer goo.ne.jp,218.213.142.230
+after pop, queue is
+yandex.ru
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer bbc.co.uk,212.58.241.131
+after pop, queue is
+myspace.com
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer yandex.ru,77.88.21.11
+after pop, queue is
+mail.ru
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer myspace.com,63.135.90.224
+after pop, queue is
+cnet.com
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer mail.ru,94.100.191.246
+after pop, queue is
+go.com
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer cnet.com,64.30.224.118
+after pop, queue is
+4399.com
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer go.com,68.71.220.3
+after pop, queue is
+orkut.com
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer 4399.com,115.182.52.231
+after pop, queue is
+skype.com
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer orkut.com,74.125.142.86
+after pop, queue is
+ameblo.jp
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer skype.com,204.9.163.225
+after pop, queue is
+naver.com
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer ameblo.jp,180.233.142.129
+after pop, queue is
+flickr.com
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer naver.com,220.95.233.172
+after pop, queue is
+4shared.com
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer flickr.com,68.142.214.24
+after pop, queue is
+amazon.co.jp
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer 4shared.com,74.117.178.92
+after pop, queue is
+linkedin.com
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer amazon.co.jp,176.32.120.15
+after pop, queue is
+dailymotion.com
+imdb.com
+aol.com
+***********************from consumer linkedin.com,216.52.242.86
+after pop, queue is
+imdb.com
+aol.com
+***********************from consumer dailymotion.com,195.8.215.138
+after pop, queue is
+aol.com
+***********************from consumer imdb.com,72.21.210.29
+after pop, queue is
+***********************from consumer aol.com,64.12.79.57
+after push, queue is
+amazon.com
+***************************from producer amazon.com
+after push, queue is
+amazon.com
+wordpress.com
+***************************from producer wordpress.com
+after push, queue is
+amazon
