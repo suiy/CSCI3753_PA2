@@ -38,7 +38,6 @@ typedef struct consumer_args_s{
     pthread_mutex_t* mutex;
 }consumer_args;
 
-/*
 void print_q(queue* q){
 	int a;
 	char *b;
@@ -47,23 +46,23 @@ void print_q(queue* q){
 		printf("%s\n",b);
 		}
 	}
-*/
+
 void* Producer(void* args){
 	
 	// Set pointer to l=ocal pointer
-	producer_args* arg_p = args;
+	producer_args* arg_p = (producer_args*) args;
 	
 	// Temp buffer
     char hostname[MAX_NAME_LENGTH];
-    printf("2\n");
+   // printf("2\n");
     // Read File and Process //
     while(fscanf(arg_p->file, INPUTFS, hostname)>0){
-	printf("3\n");
+	//printf("3\n");
 		// Test queue is full
 		pthread_mutex_lock(arg_p->mutex);
 		int full = queue_is_full(&q);
 		pthread_mutex_unlock(arg_p->mutex);
-		printf("4\n");
+		//printf("4\n");
 		while(full){
 			int j = 1 + (int)( 100.0 * rand() / ( RAND_MAX + 1.0 ) );
 			usleep(j);
@@ -71,21 +70,19 @@ void* Producer(void* args){
 			pthread_mutex_lock(arg_p->mutex);
 			full = queue_is_full(&q);
 			pthread_mutex_unlock(arg_p->mutex);
-			printf("5\n");
+			//printf("5\n");
 			}
 
 		// Push hostname in our queue
 		pthread_mutex_lock(arg_p->mutex);
-		char* strings = malloc(MAX_NAME_LENGTH);
-		printf("6\n");
+		//printf("6\n");
 		
 		// **may need free
-		strcpy(strings,hostname); 
-		if(!queue_push(&q, strings))
+		if(!queue_push(&q, hostname))
 		{
 			printf("after push, queue is\n");
-			//print_q(&q);
-			printf("7\n");
+			print_q(&q);
+			//printf("7\n");
 		}
 
 		pthread_mutex_unlock(arg_p->mutex);
@@ -98,42 +95,42 @@ void* Producer(void* args){
 	pthread_mutex_lock(arg_p->mutex);
 	control-=1;
 	printf("Quit producer OK \n");
-	printf("9\n");
+	//printf("9\n");
 	pthread_mutex_unlock(arg_p->mutex);
 	return NULL;
 }
 
 void* Consumer(void* args){
 	// Set local variable and buffer
-	consumer_args* arg_c = args;
+	consumer_args* arg_c = (consumer_args *) args;
     char hostname[MAX_NAME_LENGTH];
     char strings[MAX_NAME_LENGTH];
     char firstipstr[MAX_IP_LENGTH];
     int is_empty;
 
-    printf("21\n");
+    //printf("21\n");
     
 	while(1){
 		
 		// Test producer thread is runing and queue is not empty
 		pthread_mutex_lock(arg_c->mutex);
 		is_empty = !queue_is_empty(&q);
-		printf("22\n");
+		//printf("22\n");
 		
 		// If it is not empty, then pop out and write
 		if(is_empty){	 
-		printf("23\n");
+		//printf("23\n");
 		
-		char* a = queue_pop(&q);
+		char* a = (char *) queue_pop(&q);
 		
-		printf("Special error\n");
-		printf("%s \n", a);
+		//printf("Special error\n");
+		//printf("%s \n", a);
 		strcpy(hostname,a);
 		// ****may need free
-		printf("24\n");
-		
+		//printf("24\n");
+
 		printf("after pop, queue is\n");
-		//print_q(&q);
+		print_q(&q);
 
 		if(dnslookup(hostname, firstipstr, sizeof(firstipstr))
 			== UTIL_FAILURE){
@@ -147,12 +144,12 @@ void* Consumer(void* args){
 	    strcpy(strings,hostname);
         strcat(strings,","); 
 		strcat(strings,firstipstr);
-		printf("26\n");
+		//printf("26\n");
 		
 		printf ("***********************from consumer %s\n", strings);
 		
 		fprintf(arg_c->file, "%s\n", strings);
-		printf("27\n");
+		//printf("27\n");
 		
 		pthread_mutex_unlock(arg_c->mutex);
 		}
@@ -163,7 +160,7 @@ void* Consumer(void* args){
 			pthread_mutex_unlock(arg_c->mutex);
 			return NULL;
 			printf("Quit from consumer OK \n");
-			printf("28\n");
+			//printf("28\n");
 		}
 		else {pthread_mutex_unlock(arg_c->mutex);}
 	}

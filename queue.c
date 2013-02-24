@@ -66,14 +66,14 @@ int queue_is_full(queue* q){
 }
 
 void* queue_pop(queue* q){
-    char* ret_payload;
 	
     if(queue_is_empty(q)){
 	return NULL;
     }
-	
-    ret_payload=q->array[q->front].payload;
-    //q->array[q->front].payload = NULL;
+	bzero(ret_payload,MAX_NAME_LENGTH);
+    strcpy(ret_payload,q->array[q->front].payload);
+    free (q->array[q->front].payload);
+    q->array[q->front].payload = NULL;
     q->front = ((q->front + 1) % q->maxSize);
 
     return ret_payload;
@@ -85,8 +85,8 @@ int queue_push(queue* q, void* new_payload){
 	return QUEUE_FAILURE;
     }
 
-    q->array[q->rear].payload = new_payload;
-
+    q->array[q->rear].payload = (char *)malloc(MAX_NAME_LENGTH);
+    strcpy (q->array[q->rear].payload,(char *)new_payload);
     q->rear = ((q->rear+1) % q->maxSize);
 
     return QUEUE_SUCCESS;
